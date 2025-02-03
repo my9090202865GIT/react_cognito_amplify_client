@@ -6,7 +6,7 @@ const ProtectedData = ({ jwtToken }) => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('https://localhost:5001/api/Books/GetDemoBook', {
+      const response = await fetch('http://efcore-testing-app-dev-env.eba-mhjtg3ez.us-east-1.elasticbeanstalk.com/api/Books/GetDemoBook', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${jwtToken}`
